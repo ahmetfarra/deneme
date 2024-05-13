@@ -48,6 +48,8 @@ class HandGestureDetector:
             parts.append((id, cx, cy))
         return parts
 
+
+
     def is_finger_closed(self, parts, tip_id, dip_id):
         #Parmakların kapalı olup olmadığını kontrol eder
         return parts[tip_id][2] < parts[dip_id][2]
